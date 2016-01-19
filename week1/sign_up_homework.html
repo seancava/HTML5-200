@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>HTML5: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="#">gallery</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+            <h3>Tell us about yourself</h3>
+			<!-- A Simple Form    -->
+            <form id="sign-up-form" method="post" action="#">
+              <fieldset>
+                <h2>Your Profile</h2>
+                <ul>
+                  <li>
+                    <label id="f-name-label" required>First Name</label>
+                    <input type="text" name="first-name" id="f-name-label" placeholder="First Name"/>
+                  </li>
+                  <li>
+                    <label id="l-name-label" required>Last Name</label>
+                    <input type="text" name="last-name" id="l-name-label" placeholder="Last Name"/>
+                  </li>
+                  <li>
+                    <label>Please enter a valid email</label>
+                    <input type="email" required/>
+                  </li>
+                  <li>
+                  <label for="tel">Enter your phone number</label>
+                  <input type="tel" placeholder="555-555-5555" pattern="^[09]" /><!--pattern code to follow -->
+                  </li>
+                  <li>
+                    <label>Enter Zip Code</label>
+                    <input type="number" placeholder="90210" pattern="^[09]" /><!--pattern code to follow -->
+                  </li>
+                  <li>
+                    <label for="age">Select your age range</label>
+                    <select name="age" id="age">
+                      <option value="0-18<">0-18</option>
+                      <option value="19-31">19-31</option>
+                      <option value="32-44">32-44</option>
+                      <option value="45-57">45-57</option>
+                      <option value="58-70">58-70</option>
+                      <option value="71-83">71-83</option>
+                      <option value="84+">84+</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label for="length">How many guitars do yo own?</label>
+                    <select name="length" id="length">
+                      <option value="0-1">0-1</option>
+                      <option value="2-5">2-5</option>
+                      <option value="5-10">5-10</option>
+                      <option value="11-15">11-15</option>
+                      <option value="16-25">16-25</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label>How many years have you played guitar?</label>
+                    <input type="number" value="1" />
+                  </li>
+                  <li>
+                  <label for="slider1">Indicate your skill level using the slider</label>
+                  <p>bad<input id="slider1" type="range" min="100" max="500" step="10" />good</p>
+                  </li>
+                  <li>
+                  <label for="password">Choose a password</label>
+                  <input type="password" name="password" id="password" required />
+                  </li>
+                </ul>
+                
+                <input type="submit" name="submit" value="Send"/>
+                <input type="reset" name="reset" value="Reset" />
+                
+              </fieldset>
+          
+            
+          
+          
+          </form>
+            
+            	
+
+        </div><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2015</p>
+			
+		</footer>
+
+	</body>
+</html>
